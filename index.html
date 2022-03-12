@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <title> Dashboard </title>
+</head>
+<body>
+    
+
+
+    <main>
+        <form class="login">
+            <h1>LOGIN</h1>
+            Name
+            <input type="name" required placeholder="Nombre" id="nameAccess">
+            Email
+            <input type="email" required placeholder="E mail" id="email">
+            Password
+            <input type="password" required placeholder="Password" id="pw">
+            <input type="button" value="Acceder" id="ok">
+        </form>
+    </main>
+
+<script>
+
+document.getElementById('ok').onclick = function(){
+    //Datos de prueba:
+    let user = document.getElementById('nameAccess').value;
+    let mail = document.getElementById('email').value;
+    let pw = document.getElementById('pw').value;
+
+    if(pw=="a1b23e4c" && mail=="apiaccess@gmail.com" && user=="admin"){
+        window.location.href = "./slider.html";
+    } else {
+        alert("Nombre, email o contraseña incorrecta!");
+    }
+
+};
+</script>
+
+</body>
+</html>
