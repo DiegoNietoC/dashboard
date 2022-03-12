@@ -14,10 +14,23 @@
 
     <div class="buttons">
         <button id="left">&lt;</button>
+            <button id="showForm">Create or edit ✏️</button>
+            <div><input type="number" placeholder="ID of elem to delete..." id="delId"><button id="del">Delete 🗑️</button></div>
         <button id="right">&gt; </button>
     </div>
  
-    
+    <div id="addOrEdit">
+        <button id="closeForm">X</button>
+        ID: <input type="number" placeholder="Id to edit..." id="idAddOrEdit">
+        Img url: <input type="text" id="Img" placeholder="img url">
+        Author: <input type="text" id="Auth" placeholder="author name">
+        Dowload url: <input type="text" id="Url" placeholder="img url">
+        <div>
+            <button id="edit">Edit ✏️</button>
+            <button id="add">Create ➕</button>
+        </div>
+    </div>
+
     <script src="./app.js"></script>
 </body>
 </html>
